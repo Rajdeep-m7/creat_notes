@@ -1,0 +1,119 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 20px;
+    padding-left: 60px;
+    background: linear-gradient(135deg,rgb(109, 184, 249),rgba(191, 142, 227, 0.922));
+}
+#creat-btn{
+    font-size: 20px;
+    height: 45px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: rgb(160, 62, 239);
+    color: aliceblue;
+    margin-top: 10px;
+    border: 0px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3); 
+}
+#creat-btn:hover{
+    background-color: rgb(127, 28, 219);
+    
+}
+.heading::before{
+    content:'';
+    background-image: url(images/check-list.png);
+    height: 35px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+.heading{
+    margin-left: 50px;
+}
+.note-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.note-container p{
+    text-align: left;
+    background-color: aliceblue;
+    height: 100%;
+    width: 93%;
+    padding: 10px;
+    margin: 0%;
+    outline:none;
+    overflow: auto;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.note-container p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.note-container p::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius:20px;
+}
+
+.note-container p::-webkit-scrollbar-track {
+  background: transparent;
+}
+.input-box{
+    height: 170px;
+    width: 55%;
+    padding: 15px;
+    position: relative;
+}
+.input-box img{
+    height: 15px;
+    width: 15px;
+    position:absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 1;
+    background-color: rgb(222, 225, 227);
+    
+}
+.input-box img:hover{
+    background-color: rgba(136, 138, 139, 0.764);
+}
+@media (max-width: 800px) {
+    .input-box img{
+        bottom: 15px;
+        right: 5px;
+    }
+    .input-box{
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .input-box img{
+        bottom: 15px;
+        right: 2px;
+    }
+    .input-box{
+        width: 90%;
+        margin-right: 20px;
+    }
+    .container{
+        padding-left: 20px;
+    }
+    .heading::before{
+        left:20px;
+    }
+}
